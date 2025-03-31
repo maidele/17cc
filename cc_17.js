@@ -48,6 +48,25 @@ class SalesRep {
 
  
 
+//Task 3:
+
+
+class VIPCustomer extends Customer {
+    constructor(name, email, vipLevel) {
+      super(name, email);
+      this.vipLevel = vipLevel;
+    }
+     getTotalSpent() {
+      const total = super.getTotalSpent();
+      
+      return total + (total * .1);
+    }
+  }
+   // Test Task 3
+  const vipCustomer = new VIPCustomer('Bill', 'bill@gmail.com', 'Gold');
+  vipCustomer.addPurchase(200);
+  vipCustomer.addPurchase(300);
+  console.log(`${vipCustomer.name}total is this amount including the bonus: $${vipCustomer.getTotalSpent()}`);
  
  
 
