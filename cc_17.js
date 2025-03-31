@@ -17,7 +17,7 @@ class Customer {
   }// return amount that spent in total
   
   // 
-  // log for new customer and total spent
+  // logging for new customer and total spent
   const customer1 = new Customer('Jess Doe', 'jess@gmail.com');
   customer1.addPurchase(50);
   customer1.addPurchase(100);
