@@ -61,7 +61,7 @@ class VIPCustomer extends Customer {
       
       return total + (total * .1);
     }
-  }
+  }//vip details 
    // Test Task 3
   const vipCustomer = new VIPCustomer('Bill', 'bill@gmail.com', 'Gold');
   vipCustomer.addPurchase(200);
